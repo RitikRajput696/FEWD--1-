@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Selection - Premium Coffee House</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/coffee selection.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h1><i class="fas fa-coffee"></i> Bean Boutique</h1>
+          <p class="tagline">Premium Coffee Experience</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="coffee-selection.html" class="active"
+                >Coffee Selection</a
+              >
+            </li>
+            <li><a href="brewing-equipment.html">Brewing Equipment</a></li>
+            <li><a href="events.html">Events & Workshops</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li>
+              <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </li>
+          </ul>
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Coffee Selection</h1>
+        <p>
+          Discover our carefully curated collection of premium coffees from
+          around the world. Each bean tells a story of its origin, roasting
+          process, and unique flavor profile.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-controls">
+          <div class="filter-group">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+              <option value="name">Name</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Rating</option>
+              <option value="roast">Roast Level</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="roast">Roast:</label>
+            <select id="roast">
+              <option value="all">All Roasts</option>
+              <option value="light">Light</option>
+              <option value="medium">Medium</option>
+              <option value="dark">Dark</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="Search coffees..." />
+          </div>
+        </div>
+        <div class="category-filters">
+          <button class="category-btn active" data-category="all">
+            All Coffee
+          </button>
+          <button class="category-btn" data-category="single-origin">
+            Single Origin
+          </button>
+          <button class="category-btn" data-category="blend">Blends</button>
+          <button class="category-btn" data-category="decaf">Decaf</button>
+          <button class="category-btn" data-category="organic">Organic</button>
+          <button class="category-btn" data-category="specialty">
+            Specialty
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coffee Selection -->
+    <section class="coffee-section">
+      <div class="container">
+        <div class="coffee-grid" id="coffee-grid">
+          <!-- Coffee cards will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Summary -->
+    <div class="cart-summary" id="cart-summary" onclick="toggleCart()">
+      <span>Cart: $<span id="cart-total">0.00</span></span>
+      <span class="cart-count" id="cart-count">0</span>
+    </div>
+
+    <script src="./JS/main.js"></script>
+    <script src="./JS/cofee-selection.js"></script>
+  </body>
+</html>

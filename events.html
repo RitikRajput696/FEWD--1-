@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events & Workshops - Brew Masters Coffee</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/events.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="floating-beans">
+      <div class="bean" style="left: 10%; animation-delay: 0s">☕</div>
+      <div class="bean" style="left: 20%; animation-delay: 3s">☕</div>
+      <div class="bean" style="left: 30%; animation-delay: 6s">☕</div>
+      <div class="bean" style="left: 40%; animation-delay: 9s">☕</div>
+      <div class="bean" style="left: 50%; animation-delay: 12s">☕</div>
+      <div class="bean" style="left: 60%; animation-delay: 2s">☕</div>
+      <div class="bean" style="left: 70%; animation-delay: 5s">☕</div>
+      <div class="bean" style="left: 80%; animation-delay: 8s">☕</div>
+      <div class="bean" style="left: 90%; animation-delay: 11s">☕</div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h1><i class="fas fa-coffee"></i> Bean Boutique</h1>
+          <p class="tagline">Premium Coffee Experience</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="coffee-selection.html">Coffee Selection</a></li>
+            <li><a href="brewing-equipment.html">Brewing Equipment</a></li>
+            <li><a href="events.html" class="active">Events & Workshops</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li>
+              <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </li>
+          </ul>
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Coffee Events & Workshops</h1>
+        <p>Discover, Learn, and Connect with Fellow Coffee Enthusiasts</p>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="container">
+        <h2>Upcoming Events</h2>
+
+        <div class="workshop-levels">
+          <div class="level-filter active" data-level="all">All Events</div>
+          <div class="level-filter" data-level="beginner">Beginner</div>
+          <div class="level-filter" data-level="intermediate">Intermediate</div>
+          <div class="level-filter" data-level="advanced">Advanced</div>
+          <div class="level-filter" data-level="tasting">Tastings</div>
+        </div>
+
+        <div class="events-grid">
+          <div class="event-card featured-event" data-level="intermediate">
+            <div class="featured-badge">Featured</div>
+            <div class="event-type">Workshop</div>
+            <h3>Advanced Latte Art Masterclass</h3>
+            <div class="event-details">
+              <div class="event-detail">📅 June 25, 2025</div>
+              <div class="event-detail">⏰ 2:00 PM - 5:00 PM</div>
+              <div class="event-detail">👥 Max 8 people</div>
+            </div>
+            <p class="event-description">
+              Master the art of creating stunning latte designs. Learn advanced
+              techniques including rosettas, tulips, and swan patterns from our
+              award-winning barista.
+            </p>
+            <div class="event-price">$85 per person</div>
+            <button class="btn">Register Now</button>
+          </div>
+
+          <div class="event-card" data-level="tasting">
+            <div class="event-type">Tasting</div>
+            <h3>Ethiopian Coffee Origins</h3>
+            <div class="event-details">
+              <div class="event-detail">📅 June 28, 2025</div>
+              <div class="event-detail">⏰ 7:00 PM - 9:00 PM</div>
+              <div class="event-detail">👥 Max 12 people</div>
+            </div>
+            <p class="event-description">
+              Explore the birthplace of coffee through a guided tasting of
+              premium Ethiopian beans from different regions. Discover unique
+              flavor profiles and brewing methods.
+            </p>
+            <div class="event-price">$45 per person</div>
+            <button class="btn">Register Now</button>
+          </div>
+
+          <div class="event-card" data-level="beginner">
+            <div class="event-type">Workshop</div>
+            <h3>Home Brewing Fundamentals</h3>
+            <div class="event-details">
+              <div class="event-detail">📅 July 2, 2025</div>
+              <div class="event-detail">⏰ 10:00 AM - 12:00 PM</div>
+              <div class="event-detail">👥 Max 15 people</div>
+            </div>
+            <p class="event-description">
+              Perfect for beginners! Learn the basics of coffee brewing, from
+              bean selection to extraction techniques. Includes hands-on
+              practice with various brewing methods.
+            </p>
+            <div class="event-price">$35 per person</div>
+            <button class="btn">Register Now</button>
+          </div>
+
+          <div class="event-card" data-level="advanced">
+            <div class="event-type">Competition</div>
+            <h3>Monthly Barista Battle</h3>
+            <div class="event-details">
+              <div class="event-detail">📅 July 5, 2025</div>
+              <div class="event-detail">⏰ 6:00 PM - 9:00 PM</div>
+              <div class="event-detail">🏆 Competition</div>
+            </div>
+            <p class="event-description">
+              Showcase your skills in our monthly barista competition.
+              Categories include espresso preparation, latte art, and signature
+              drink creation. Prizes for winners!
+            </p>
+            <div class="event-price">$25 entry fee</div>
+            <button class="btn">Enter Competition</button>
+          </div>
+
+          <div class="event-card" data-level="tasting">
+            <div class="event-type">Tasting</div>
+            <h3>Cold Brew & Summer Specials</h3>
+            <div class="event-details">
+              <div class="event-detail">📅 July 8, 2025</div>
+              <div class="event-detail">⏰ 3:00 PM - 5:00 PM</div>
+              <div class="event-detail">👥 Max 10 people</div>
+            </div>
+            <p class="event-description">
+              Beat the summer heat with our cold brew workshop. Learn different
+              cold extraction methods and create refreshing coffee cocktails
+              perfect for hot days.
+            </p>
+            <div class="event-price">$40 per person</div>
+            <button class="btn">Register Now</button>
+          </div>
+
+          <div class="event-card" data-level="intermediate">
+            <div class="event-type">Workshop</div>
+            <h3>Coffee Roasting Workshop</h3>
+            <div class="event-details">
+              <div class="event-detail">📅 July 12, 2025</div>
+              <div class="event-detail">⏰ 1:00 PM - 4:00 PM</div>
+              <div class="event-detail">👥 Max 6 people</div>
+            </div>
+            <p class="event-description">
+              Go behind the scenes and learn the art of coffee roasting.
+              Understand roast profiles, hear the cracks, and take home your own
+              freshly roasted beans.
+            </p>
+            <div class="event-price">$95 per person</div>
+            <button class="btn">Register Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="calendar">
+      <div class="container">
+        <div class="calendar-section">
+          <div class="calendar-header">
+            <h2>Event Calendar - July 2025</h2>
+            <p>Click on highlighted dates to see event details</p>
+          </div>
+          <div class="calendar-grid">
+            <div class="calendar-day">S</div>
+            <div class="calendar-day">M</div>
+            <div class="calendar-day">T</div>
+            <div class="calendar-day">W</div>
+            <div class="calendar-day">T</div>
+            <div class="calendar-day">F</div>
+            <div class="calendar-day">S</div>
+            <div class="calendar-day"></div>
+            <div class="calendar-day"></div>
+            <div class="calendar-day">1</div>
+            <div class="calendar-day has-event">2</div>
+            <div class="calendar-day">3</div>
+            <div class="calendar-day">4</div>
+            <div class="calendar-day has-event">5</div>
+            <div class="calendar-day">6</div>
+            <div class="calendar-day">7</div>
+            <div class="calendar-day has-event">8</div>
+            <div class="calendar-day">9</div>
+            <div class="calendar-day">10</div>
+            <div class="calendar-day">11</div>
+            <div class="calendar-day has-event">12</div>
+            <div class="calendar-day">13</div>
+            <div class="calendar-day">14</div>
+            <div class="calendar-day">15</div>
+            <div class="calendar-day">16</div>
+            <div class="calendar-day">17</div>
+            <div class="calendar-day">18</div>
+            <div class="calendar-day has-event">19</div>
+            <div class="calendar-day">20</div>
+            <div class="calendar-day">21</div>
+            <div class="calendar-day">22</div>
+            <div class="calendar-day">23</div>
+            <div class="calendar-day">24</div>
+            <div class="calendar-day">25</div>
+            <div class="calendar-day has-event">26</div>
+            <div class="calendar-day">27</div>
+            <div class="calendar-day">28</div>
+            <div class="calendar-day">29</div>
+            <div class="calendar-day">30</div>
+            <div class="calendar-day">31</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-signup">
+          <h3>Never Miss an Event!</h3>
+          <p>
+            Subscribe to our newsletter for early access to workshops and
+            exclusive events.
+          </p>
+          <form class="signup-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./JS/main.js"></script>
+    <script src="./JS/events.js"></script>
+  </body>
+</html>
